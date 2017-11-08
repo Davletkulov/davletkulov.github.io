@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmy Band</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<meta property="og:image" content="http://www.siteName.ru/img/1.png" />
+	<meta property="og:description" content="транстехсервис"/>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	</head>
+<body>
+	<header class="page-header">
+		
+		<nav class="main-nav main-nav--closed">
+		<button class="main-nav__toggle" type="button">открыть меню</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__items">
+					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+					<li class="main-nav__item"><a href="#music">РЕПЕРТУАР</a></li>
+					<li class="main-nav__item"><a href="#about">О НАС</a></li>
+					<li class="main-nav__item"><a href="#client">ОРГАНИЗАТОРАМ</a></li>
+					<li class="main-nav__item submenu-link"><a href="#" class="subMenuClick" >медиа <span class="qwe"></span></a>
+						<ul class="submenu" >
+							<li><a href="photo.html">фотогалерея</a></li>
+							<li><a href="video.html">видеогалерея</a></li>
+
+
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#news">новости</a></li>
+					<li class="main-nav__item"><a href="#contacts">контакты</a></li>
+					
+				</ul>
+				
+			</div>
+		</nav>
+	</header>
+	
+	<section class="page-glav">
+		
+		<div class="page-glav__noSliders">
+			<img src="img/filmy_logo_2.png" class="filmy-logo">
+			
+			<div id="popup_block">
+				<button id="button-exit" type="button">
+					<span class="icon_bar"></span>
+					<span class="icon_bar"></span>
+				</button>
+				<iframe id="video-1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="btn_video" data-state='1' title="ПРОМО РОЛИК"></div>
+			<div class="page-glav_slider  main_1"></div>
+			<div class="page-glav_slider main_2"></div>
+			<div class="page-glav_slider main_3"></div>
+			<div class="main_bg">
+				
+
+			</div>
+		</div>
+	</section>
+	<!--Retractable contacts-->
+	<div class="retractable_contacts">
+		<div class="show_hide_contacts" ></div>
+		<div class="show_hide_contacts_2"></div>
+		<div class="phone-number">+7 964 641 00 30</div>
+		<div class="show_hide_number"></div>
+		
+
+			<div class="modal-content2">
+				<button class="modal-content-close2" type="button" title="Закрыть">Закрыть</button>
+				<form action="php/mail.php" method="post">
+					<input class="popup-form" type="text" name="name" placeholder="Ваше Имя" required>
+					<input class="popup-form" type="email" name="email" placeholder="E-Mail">
+					<input class="popup-form" type="number" name="phone" placeholder="Номер телефона" required>
+					<textarea class="popup-form" name="message" placeholder="Сообщение"></textarea>
+					<button class="popupBtn" type="submit">Отправить</button>
+				</form>
+			</div>
+	</div>
+	
+	<!--Retractable contacts-->
+	
+	<section class="about">
+		<img class="about_png" src="img/about-png.png">
+<!--		<img src="img/mustache.png" class="mustache">-->
+		<p>Каждый из нас хоть раз в жизни представлял себя героем крутого боевика или романтичной драмы, пел под душем, пока никого нет. Песни из кино нередко становились главными символами кинокартин, а иногда и совершенно независимыми хитами. "ФИЛЬМЫ-бэнд" творят специально для тех, кому важна не только высококачественная музыка, но и таинственная атмосфера мира кино.</p>
+		
+		
+		
+		
+	</section>
+	
+<section class="poster">
+
+		<ul class="flex-container">
+			<li class="flex-item poster1" onclick="playing(this)" id="1">
+				<div class="posterOpacity"></div>
+				<p>алиса в стране<br> чудес</p></li>
+			<li class="flex-item poster2" onclick="playing(this)" id="2"><div class="posterOpacity"></div>
+				<p>тролли</p></li>
+			<li class="flex-item poster3" onclick="playing(this)" id="3"><div class="posterOpacity"></div>
+				<p>охотники за приведениями </p></li>
+			<li class="flex-item poster4" onclick="playing(this)" id="4"><div class="posterOpacity"></div>
+				<p>грязные танцы</p></li>
+			<li class="flex-item poster5" onclick="playing(this)" id="5"><div class="posterOpacity"></div>
+				<p>лихорадка сууботнего<br> вечера</p></li>
+			
+
+
+
+		</ul>
+
+		<ul class="flex-container">
+			
+			<li class="flex-item poster6" onclick="playing(this)" id="6"><div class="posterOpacity"></div>
+				<p>малыш на драйве</p></li>
+			<li class="flex-item poster7" onclick="playing(this)" id="7"><div class="posterOpacity"></div>
+				<p>кавказская пленница</p></li>
+			<li class="flex-item poster8" onclick="playing(this)" id="8"><div class="posterOpacity"></div>
+				<p>бойцовский клуб</p></li>
+			<li class="flex-item poster9" onclick="playing(this)" id="9"><div class="posterOpacity"></div>
+				<p>стражи галактики</p></li>
+			<li class="flex-item poster10"><div class="posterOpacity"></div>
+				<p>И любые другие песни,<br> которые вы захотите!</p></li>
+
+
+		</ul>
+
+	</section>
+
+	<section class="player" id="music">
+		<img src="img/08.png" class="player-bg">
+		<div class="play">
+			<img src="img/player_img.png" class="photo_play">
+			<div id="player5" class="aplayer"></div>
+
+		</div>
+		<script src="libs/player/APlayer.min.js"></script>
+		<script src="libs/player/main.js"></script>
+<!--		<a class="button-container" href="#">Весь репертуар</a>-->
+		<a href="">скачать Весь репертуар</a>
+	</section>
+	
+	<section class="team" id="about">
+	<h1>Участники группы</h1>
+		<p><q>Музыканты коллектива – настоящие профессионалы самого высокого уровня, <br> имеющие опыт работы во многих проектах,
+			в России и за рубежом, со звездами эстрады и джаза</q>.</p>
+		<ul class="team-item">
+			<li class="team-items">
+				<img src="img/team/vocal.png" class="teampng">
+				
+				<h3>Вадим Лисенков</h3>
+				<p>VOCAL</p>
+				<button class="teambutton teambutton1">подробно</button>
+				
+
+				<div class="modal-contentTeam content-team1">
+					<button class="modal-content-closeTeam close-team1" type="button" title="Закрыть">Закрыть</button>
+					<p>Занимается музыкой с самого детства. Обладатель шикарного тембра и широкого диапазона. Популярный певец, ведущий, шоумен. Сотрудничает с брэндом «Чайхона №1». Мастер словесной импровизации. Прекрасно чувствует себя в таких стилях как поп, соул, джаз, фанк, рок. Артистичный, неудержимый энергией сцены, драйвовый и веселый человек.</p>
+						<div class="sociales">
+							<a class="social-btn social-btn-vk" href="https://vk.com/vadiiiiiim" target="_blank"></a>
+							<a class="social-btn social-btn-fb" href="https://www.facebook.com/vadim.lisenkov?fref=ts" target="_blank"></a>
+
+						</div>
+
+
+					</div>
+					
+
+					
+
+
+
+				
+
+				
+			</li>
+			<li class="team-items">
+				<img src="img/team/saxophone.png" class="teampng">
+				<h3>Антон Петрищевский</h3>
+				<p>SAXOPHONE</p>
+				<button class="teambutton teambutton2">подробно</button>
+
+
+				<div class="modal-contentTeam content-team2">
+					<button class="modal-content-closeTeam close-team2" type="button" title="Закрыть">Закрыть</button>
+					<p>Саксофонист, композитор, аранжировщик, преподаватель Московского Губернского колледжа искусств, лидер проекта «The Jazz Prisoners», выпускник Berklee College of Music '2013 по специальности джазовое исполнительство (саксофон) и Академии им. Гнесиных (джазовый исполнитель). Стипендиат Berklee College of Music Scholarship, лауреат региональных и международного конкурсов, стипендиат программы «Новые имена», участник различных проектов на Приморской джазовой сцене и в Москве.</p>
+					<div class="sociales">
+						<a class="social-btn social-btn-vk" href="https://vk.com/id85653174" target="_blank"></a>
+						<a class="social-btn social-btn-fb" href="https://www.facebook.com/anton.petrishchevskiy?fref=ts" target="_blank"></a>
+
+					</div>
+
+
+				</div>
+			</li>
+			<li class="team-items">
+				<img src="img/team/ELECTRIC_BASS.png" class="teampng">
+				<h3>Алан Макиев</h3>
+				<p>ELECTRIC BASS</p>
+				<button class="teambutton teambutton3">подробно</button>
+
+
+				<div class="modal-contentTeam content-team3">
+					<button class="modal-content-closeTeam close-team3" type="button" title="Закрыть">Закрыть</button>
+					<p>Разносторонний и интересный музыкант, играющий в таких стилях как поп, рок, техно, кантри, блюз, соул. Имеет большой опыт работы в командах и проектах высокого уровня. 7 лет был бессменным басистом в рок-группе «Teo Sound» цирка братьев Запашных, проявив себя, в том числе и как композитор.</p>
+					<div class="sociales">
+						<a class="social-btn social-btn-vk" href="https://vk.com/bassalan" target="_blank"></a>
+						<a class="social-btn social-btn-fb" href="https://www.facebook.com/alan.makiev.35?fref=ts" target="_blank" ></a>
+
+					</div>
+
+
+				</div>
+			</li>
+			<li class="team-items">
+				<img src="img/team/vocal2.png" class="teampng">
+				<h3>Наталья Ли</h3>
+				<p>VOCAL</p>
+				<button class="teambutton teambutton4">подробно</button>
+
+
+				<div class="modal-contentTeam content-team4">
+					<button class="modal-content-closeTeam close-team4" type="button" title="Закрыть">Закрыть</button>
+					<p>Красивая и сильная вокалистка, чей тембр и голос достоин вашего внимания. Имеет огромный опыт выступлений и большой репертуар. Окончила Российскую Академию Музыки им. Гнесиных по специальности эстрадно-джазовый вокал. Лауреат многих международных конкурсов. Сотрудничает с DJ Smash, Андрей Ковалёв, Тамерлан Садвакасов («А Студио»). Выступает на самых модных площадках Москвы.</p>
+					<div class="sociales">
+						<a class="social-btn social-btn-vk" href="https://vk.com/id180507614" target="_blank"></a>
+						<a class="social-btn social-btn-fb" href="https://www.facebook.com/natalya.kulikova.7?fref=ts" target="_blank"></a>
+
+					</div>
+
+
+				</div>
+				
+			</li>
+		</ul>
+		<ul class="team-item">
+			<li class="team-items">
+				<img src="img/team/PIANO.png" class="teampng">
+				<h3>Николай Хоменко</h3>
+				<p>PIANO</p>
+				<button class="teambutton teambutton5">подробно</button>
+
+
+				<div class="modal-contentTeam content-team5">
+					<button class="modal-content-closeTeam close-team5" type="button" title="Закрыть">Закрыть</button>
+					<p>Харизматичный, веселый молодой музыкант. Выпускник РАМ имени Гнесиных по специальности Композиция. Работал аранжировщиком проекта Rockestra, AngeNoir. Сотрудничал и продолжает сотрудничество с такими коллективами, как оркестр Московский джаз, акустический проект 2Sounds, рок-команда Даарика и другие. Также в данный момент работает со студией Stereolife-pro в качестве аранжировщика.</p>
+					<div class="sociales">
+						<a class="social-btn social-btn-vk" href="https://vk.com/nickypatifon" target="_blank"></a>
+<!--						<a class="social-btn social-btn-fb" href="#"></a>-->
+
+					</div>
+
+
+				</div>
+			</li>
+		
+			<li class="team-items">
+				<img src="img/team/GUITAR.png" class="teampng">
+				<h3>Владимир Шевяков</h3>
+				<p>GUITAR</p>
+				<button class="teambutton teambutton6">подробно</button>
+
+
+				<div class="modal-contentTeam content-team6">
+					<button class="modal-content-closeTeam close-team6" type="button" title="Закрыть">Закрыть</button>
+					<p>Изучал классическую гитару. Позже начал заниматься электрогитарой. Работает с популярными артистами (Зара, Сати Казанова, Алла Рид (Голос), Александр Бон (Голос), в авторских проектах, в разных жанрах. Также большой опыт студийной работы в абсолютно разных проектах. Является победителем двух международных конкурсов.</p>
+					<div class="sociales">
+						<a class="social-btn social-btn-vk" href="https://vk.com/vladimir.shevyakov" target="_blank"></a>
+						<a class="social-btn social-btn-fb" href="https://www.facebook.com/vladimir.shevyakov?fref=ts" target="_blank"></a>
+
+					</div>
+
+
+				</div>
+			</li>
+			<li class="team-items">
+				<img src="img/team/DRUMS.png" class="teampng">
+				<h3>Руслан Ахметшин</h3>
+				<p>DRUMS</p>
+				<button class="teambutton teambutton7">подробно</button>
+
+
+				<div class="modal-contentTeam content-team7">
+					<button class="modal-content-closeTeam close-team7" type="button" title="Закрыть">Закрыть</button>
+					<p>Молодой, амбициозный, талантливый барабанщик, искренне любящий свой инструмент. Создает на сцене мощный драйв и безукоризненный ритм. Продюсер и композитор авторской музыки в жанре electronic/dance, industrial.</p>
+					<div class="sociales">
+						<a class="social-btn social-btn-vk" href="https://vk.com/id78542365" target="_blank"></a>
+						<a class="social-btn social-btn-fb" href="https://www.facebook.com/profile.php?id=100009852124379&fref=ts" target="_blank"></a>
+
+					</div>
+
+
+				</div>
+			</li>
+		</ul>
+
+		
+	</section>
+	<section class="client" id="client">
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">файлы для скачивания</h2>
+			<div class="popupFlex">
+				<a href="file_download/common_rider.docx">бытовой райдер</a>
+				<a href="file_download/filmyband%20photo.rar">фотографии</a>
+				<a href="#">договор</a>
+				<a href="file_download/technical%20_rider.docx">технический райдер</a>
+				<a href="file_download/filmy_logo.rar">логотип</a>
+				<a href="file_download/repertoire.docx">репертуар</a>
+				<a href="file_download/filmyband%20promo%20clip.rar">небрендированное видео</a>
+
+			</div>
+
+
+
+			<a href="file_download.zip">скачать все файлы</a>
+
+		</div>
+		<h1>клиентам</h1>
+		<h3>Три простых шага к сотрудничеству</h3>
+		<div class="clientFlex">
+			<div>
+				<img>
+				<h4>Связаться</h4>
+				<p>Позвоните или <a href="#contacts">оставьте заявку</a> и узнайте свободна ли интересующая вас дата.Обсуждение общего плана проведения мероприятия: тематика, длительность, кто организовывает и т.д.</p>
+			</div>
+			<div>
+				<img>
+				<h4>Договориться</h4>
+				<p>Согласование стоимость выступления. Вместе с нашим концертным директором обсудите и утвердите план концерта. Подготовка площадки, со всем необходимым оборудованием к дате концерта</p>
+			</div>
+			<div>
+				<img>
+				<h4>Наслаждаться музыкой</h4>
+				<p>Мы имеем огромный опыт выступления на самых различных мероприятиях - от свадеб, до небольших частных вечеринок. Везде свои нюансы, которые важно не упустить.</p>
+			</div>
+		</div>
+		<div class="btn2"><a class="btnFile">файлы для скачивания</a></div>
+	</section>
+	
+
+		
+<div class="background45">
+	<section class="gallery">
+		<div class="galleryFlex">
+			<div class="photoGallery">
+				<img src="img/filmCollages.png" class="filmCollages">
+				<a href="#">фотогаллерея</a>
+			</div>
+			<div class="videoGallery">
+
+				<div class="bg_video_wrapper">
+					<video class="bgVideo" src="./img/video.mp4" autoplay muted loop></video>
+				</div>
+
+
+				<a href="#">видеогаллерея</a></div>
+		</div>
+
+	</section>
+
+	
+	<section class="news" id="news">
+		<h1> последние новости</h1>
+		<div class="news__wrapper">
+			<h2 class="news__title"></h2>
+			<ul class="news__items">
+				<li class="news__item news__item1">
+					<div class="news_text ">
+						<span class='title'>"Золотой пазл" 2017 - лучший ивент проект</span><br/> 13 сентября 2017 Группа «Фильмы» приняла участие в IX Ежегодной Национальной Премии среди организаторов мероприятий "Золотой Пазл".<br/>
+						<a href="https://www.youtube.com/watch?v=VKF2X4OzYZ8" target="_blank">Подробнее...</a>
+					</div>
+				</li>
+				<li class="news__item news__item2">
+					<div class="news_text">
+						<span class='title'>Концерт группы "Фильмы" в клубе "Синематограф"</span><br/> Зажгли на мероприятии в клубе "Синематограф" с программой из любимых песен к советским и зарубежным фильмам.<br/>
+						<a href="http://filmy-band.livejournal.com/488.htm" target="_blank">Подробнее...</a>
+					</div>
+				</li>
+				<li class="news__item news__item3">
+					<div class="news_text ">
+						<span class='title'>Участники группы "Фильмы" играют джаз!</span><br/> Участники группы "Фильмы" отлично играют джаз! 11.07.2017 состоялось мероприятие "Джаз на крыше", собравшее более 250 зрителей на крыше одного из бизнес-центров Таганки.<br/>
+						<a href="http://filmy-band.livejournal.com/728.html" target="_blank">Подробнее...</a>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</section>
+	<div class="wrapper-reviews" id="reviews">
+		<div class="inner">
+
+			<div class="ittem">
+
+				<div class="slid1">
+					<fieldset>
+						<legend align="center"><h2>отзывы</h2></legend>
+
+						<img src="img/vladimir.jpg" class="reviews1">
+						<h5>Владимир Пресняков (старший)</h5>
+						<p><q> Мне понравилось! 
+							Ваша группа поинтересней большинства!<br>
+							Удачи вам! </q></p>
+
+
+						<button class="btn-reviews prev">назад</button>
+						<button class="btn-reviews next">вперед</button>
+					</fieldset>
+				</div>
+
+
+				<div class="slid2">
+					<fieldset>
+						<legend align="center"><h2>отзывы</h2></legend>
+						<img src="img/olga.png" class="reviews1">
+						<h5>Ольга Борисова</h5>
+						<p><q> Хочу выразить огромную благодарность кавер-группе «Фильмы», за нестандартный и творческий подход к реализации концепции церемонии награждения. Такой отдачи и реализации творческой идеи режиссера, я даже не ожидала. Ребята воплотили все и более, что хотелось! </q></p>
+
+
+						<button class="btn-reviews prev">назад</button>
+						<button class="btn-reviews next">вперед</button>
+					</fieldset>
+
+				</div>
+				<div class="clearfix"></div>
+			</div> 
+		</div>
+
+	</div>
+</div>
+		
+
+
+
+			
+	
+	
+		
+		
+
+			<div class="wrapper-form" id="contacts">
+				
+				<article>
+					<h1>Просто свяжитесь с нами</h1>
+					<h2>Наш адрес:</h2>
+
+					<h3>г. Москва ул. Рублевское Шоссе д. 44, к.2</h3>
+					<br/>
+					<h2>Email:</h2>
+					<h3><a href="mailto: filmycoverband@gmail.com" target="_blank">filmycoverband@gmail.com</a></h3>
+					<h2>Phone:</h2>
+					<h3>+7 964 641 00 30</h3>
+					<h3>+7 916 555 82 27</h3>
+				</article>
+				<form action="php/sandmail.php" method="post">
+					<input type="text" name="name" placeholder="Ваше Имя" class="form2">
+					<input type="email" name="email" placeholder="E-Mail" class="form2">
+					<input type="number" name="phone" placeholder="Номер телефона" class="form2">
+					<textarea name="message" placeholder="Сообщение"></textarea>
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+
+		
+<!--	</main>-->
+	
+	<footer class="footer">
+		<div class="footer__items">
+			<div class="footer__item">
+				<h4>о нас</h4>
+				
+				<p>МЫ -группа "ФильМЫ"- оживим на сцене любые песни из кино (разных эпох и стилей), саундтреки из кино/мульт-фильмов, а так же, достойно исполним лучшие хиты мировой и отечественной сцены!</p>
+			</div>
+			<div class="footer__item">
+				<h4>Соц. сети</h4>
+				
+				<div class="sociales">
+					<a class="social-btn social-btn-vk" href="https://vk.com/public146802350" target="_blank"></a>
+					<a class="social-btn social-btn-fb" href="https://www.facebook.com/FilmyCoverBand/#" target="_blank"></a>
+					<a class="social-btn social-btn-inst" href="https://www.instagram.com/filmy_band/" target="_blank"></a>
+					<a class="social-btn social-btn-youtube" href="https://www.youtube.com/channel/UC24T7Z5eZzP6-IVYj8Bw9Og/videos" target="_blank"></a>
+				</div>
+			</div>
+			<div class="footer__item">
+				<h4>наш адрес</h4>
+				
+				<p>
+					
+
+					г. Москва<br>
+					ул. Рублевское Шоссе д. 44, к.2<br>+7 964 641 00 30</p>
+			</div>
+		</div>
+	</footer>
+
+	
+	<div class="modal-overlay"></div>
+	<script src="libs/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
